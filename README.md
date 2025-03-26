@@ -86,6 +86,8 @@ In training, fitting and predicting both models on the dataset, the following re
 |---------- |:----------|:-------|:---------|:--------|:-------------:|
 |Decision Tree	|0.887513	|0.443792	|0.499954	|0.470202	|128|
 |Logistic Regression	|0.887594	|0.443797	|0.500000	|0.470225	|193|
+
+
 Quick review of this results show that accuracy scores were very close with numbers over 85%, however the recall, precision and F1_Score were below 50%.
 
 This means the classifier has a high number of False negatives which can be an outcome of imbalanced class or untuned model hyperparameters. More likely because of the imbalanced dataset with a higher number of Deposit = "No" records.
@@ -102,6 +104,8 @@ In this section, we will compare the performance of the Logistic Regression mode
 |KNN	|142	|0.885	|0.885|
 |Decision Tree |4.59	|0.887	|0.887|
 |SVM	|241	|0.887	|0.887|
+
+
 Looking at the results from the model comparison, Decision Tree had the best numbers across the three metrics with lowest train time in seconds, highest training and testing accuracy scores.
 
 
